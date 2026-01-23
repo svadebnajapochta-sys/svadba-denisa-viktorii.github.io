@@ -1,4 +1,3 @@
-﻿
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -361,7 +360,7 @@
             }
         }
 
-        /* ========== ОСНОВНОЙ КОНТЕНТ ========== */
+        /* ========== ОСНОВНЫЙ КОНТЕНТ ========== */
         .main-content {
             opacity: 0;
             transition: opacity 0.5s ease;
@@ -704,24 +703,24 @@
             margin-left: auto;
             margin-right: auto;
         }
-            /* ========== ФОТО ТКАНЕЙ (7 ШТУК) ========== */
+            /* ========== ФОТО ТКАНЕЙ (3 ШТУКИ) ========== */
 .fabric-palette {
     display: flex;
     justify-content: center;
-    gap: 1.8rem;
+    gap: 2.5rem;
     flex-wrap: wrap;
     margin-top: 3rem;
 }
 
 .fabric-item {
-    width: 140px;
+    width: 160px;
     text-align: center;
     animation: fadeIn 0.6s ease-out;
 }
 
 .fabric-image {
     width: 100%;
-    height: 140px;
+    height: 160px;
     border-radius: 12px;
     margin-bottom: 1rem;
     position: relative;
@@ -800,24 +799,44 @@
     border-color: rgba(161, 161, 124, 0.3);
 }
 
-/* Адаптивность для 9 плашек */
-@media (max-width: 1400px) {
+/* Адаптивность для 3 плашек */
+@media (max-width: 768px) {
     .fabric-palette {
-        gap: 1.4rem;
+        gap: 2rem;
     }
     
     .fabric-item {
-        width: 125px;
+        width: 140px;
     }
     
     .fabric-image {
-        height: 125px;
+        height: 140px;
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 576px) {
     .fabric-palette {
-        gap: 1.2rem;
+        gap: 1.5rem;
+    }
+    
+    .fabric-item {
+        width: 120px;
+    }
+    
+    .fabric-image {
+        height: 120px;
+    }
+    
+    .fabric-name {
+        font-size: 1rem;
+        padding: 0.4rem 0.5rem;
+        min-height: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fabric-palette {
+        gap: 1rem;
     }
     
     .fabric-item {
@@ -829,86 +848,19 @@
     }
 }
 
-@media (max-width: 992px) {
-    .fabric-palette {
-        gap: 1rem;
-    }
-    
-    .fabric-item {
-        width: 100px;
-    }
-    
-    .fabric-image {
-        height: 100px;
-    }
-    
-    .fabric-name {
-        font-size: 1rem;
-        padding: 0.4rem 0.5rem;
-        min-height: 36px;
-    }
-}
-
-@media (max-width: 768px) {
-    .fabric-palette {
-        gap: 0.9rem;
-    }
-    
-    .fabric-item {
-        width: 90px;
-    }
-    
-    .fabric-image {
-        height: 90px;
-        border-radius: 10px;
-    }
-}
-
-@media (max-width: 576px) {
-    .fabric-palette {
-        gap: 0.8rem;
-    }
-    
-    .fabric-item {
-        width: 85px;
-    }
-    
-    .fabric-image {
-        height: 85px;
-    }
-    
-    .fabric-name {
-        font-size: 0.9rem;
-        padding: 0.3rem 0.4rem;
-        min-height: 34px;
-    }
-}
-
-@media (max-width: 480px) {
-    .fabric-palette {
-        gap: 0.7rem;
-    }
-    
-    .fabric-item {
-        width: 80px;
-    }
-    
-    .fabric-image {
-        height: 80px;
-    }
-}
-
 @media (max-width: 380px) {
     .fabric-palette {
-        gap: 0.6rem;
+        flex-direction: column;
+        align-items: center;
     }
     
     .fabric-item {
-        width: 75px;
+        width: 140px;
+        margin-bottom: 1.5rem;
     }
     
     .fabric-image {
-        height: 75px;
+        height: 140px;
     }
 }
         /* ========== ПРОГРАММА ДНЯ В ШАХМАТНОМ ПОРЯДКЕ ========== */
@@ -1075,27 +1027,6 @@
             margin-top: 1rem;
             font-size: 0.95rem;
         }
-         /* ========== СООБЩЕНИЕ ДЛЯ ГОСТЕЙ ========== */
-.message-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-.message-content {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 4rem 3rem;
-    box-shadow: 
-        0 10px 40px rgba(0, 0, 0, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.5);
-    border: 1px solid rgba(161, 161, 124, 0.2);
-    position: relative;
-    overflow: hidden;
-}
 
 /* Декоративные уголки */
 .message-content::before,
@@ -2104,31 +2035,15 @@ html {
                 <p>Палитра свадьбы вдохновлена природой и элегантностью.</p>
             </div>
             <div class="fabric-palette">
-            <!-- Фото 1 -->
+            <!-- Фото 1: Coffee bean -->
             <div class="fabric-item">
                 <div class="fabric-image">
-                    <img src="images/choko.jpg" alt="Название ткани" class="fabric-photo">
+                    <img src="images/choko.jpg" alt="Coffee bean" class="fabric-photo">
                 </div>
                 <div class="fabric-name">Coffee bean</div>
             </div>
             
-            <!-- Фото 2 -->
-            <div class="fabric-item">
-                <div class="fabric-image">
-                    <img src="images/светкор.jpg" alt="Cocoa brown" class="fabric-photo">
-                </div>
-                <div class="fabric-name">Cocoa brown</div>
-            </div>
-            
-            <!-- Фото 3 -->
-            <div class="fabric-item">
-                <div class="fabric-image">
-                    <img src="images/корглян.jpg" alt="Cream beige" class="fabric-photo">
-                </div>
-                <div class="fabric-name">Cream beige</div>
-            </div>
-            
-            <!-- Фото 4 -->
+            <!-- Фото 2: Olive green -->
             <div class="fabric-item">
                 <div class="fabric-image">
                     <img src="images/оливка.jpg" alt="Olive green" class="fabric-photo">
@@ -2136,42 +2051,13 @@ html {
                 <div class="fabric-name">Olive green</div>
             </div>
             
-            <!-- Фото 5 -->
+            <!-- Фото 3: Champagne -->
             <div class="fabric-item">
                 <div class="fabric-image">
-                    <img src="images/болотный.jpg" alt="Sage green" class="fabric-photo">
+                    <img src="images/champagne.jpg" alt="Champagne" class="fabric-photo">
                 </div>
-                <div class="fabric-name">Sage green</div>
+                <div class="fabric-name">Champagne</div>
             </div>
-            
-            <!-- Фото 6 -->
-            <div class="fabric-item">
-                <div class="fabric-image">
-                    <img src="images/Ochre.jpg" alt="Burnt orange" class="fabric-photo">
-                </div>
-                <div class="fabric-name">Burnt orange</div>
-            </div>
-            
-            <!-- Фото 7 -->
-            <div class="fabric-item">
-                <div class="fabric-image">
-                    <img src="images/золото.jpg" alt="Sun Gold" class="fabric-photo">
-                </div>
-                <div class="fabric-name">Sun Gold</div>
-            </div><div class="fabric-item">
-        <div class="fabric-image">
-            <img src="images/champagne.jpg" alt="" class="fabric-photo">
-        </div>
-        <div class="fabric-name">Champagne</div>
-    </div>
-    
-    <!-- Фото 9 -->
-    <div class="fabric-item">
-        <div class="fabric-image">
-            <img src="images/blushpink.jpg" alt="Blush pink" class="fabric-photo">
-        </div>
-        <div class="fabric-name">Blush pink</div>
-    </div>
 </div>
 </section>
 <!-- Программа дня -->
@@ -2195,9 +2081,9 @@ html {
         </div>
         
         <!-- Блок 2: Плашка справа, время слева -->
-        <div class="program-item" id="programItem2" data-time="17:00">
+        <div class="program-item" id="programItem2" data-time="16:00">
             <div class="timeline-dot" id="dot2"></div>
-            <div class="program-time program-time-left" id="time2">17:00</div>
+            <div class="program-time program-time-left" id="time2">16:00</div>
             <div class="program-content">
                 <h3 class="program-title">Свадебный фуршет</h3>
                 <p class="program-description">Лёгкие закуски, шампанское и приятное общение с гостями</p>
@@ -2206,9 +2092,9 @@ html {
         </div>
         
         <!-- Блок 3: Плашка слева, время справа -->
-        <div class="program-item" id="programItem3" data-time="18:30">
+        <div class="program-item" id="programItem3" data-time="17:00">
             <div class="timeline-dot" id="dot3"></div>
-            <div class="program-time program-time-right" id="time3">17:30</div>
+            <div class="program-time program-time-right" id="time3">17:00</div>
             <div class="program-content">
                 <h3 class="program-title">Банкет</h3>
                 <p class="program-description">Ужин, конкурсы, танцы и веселье</p>
@@ -2217,27 +2103,6 @@ html {
         </div>
     </div>
 </section>
-        <!-- Сообщение для гостей -->
-        <section class="section" id="message">
-            <div class="message-section">
-                <div class="message-content">
-                    <div class="message-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h2 class="message-title">Дорогие гости</h2>
-                    <div class="message-text">
-                        <p>Мы будем счастливы разделить с вами наш особенный день.</p>
-                        <p>Если вы задумывались о букете цветов, хотим сказать: самый ценный букет для нас — это ваше присутствие</p>
-                        <p>А если вам захочется сделать небольшой знак внимания, мы с радостью примем бутылочку хорошего напитка с тёплой подписью — поводом открыть её в один из счастливых дней нашей будущей семейной жизни.</p>
-                    </div>
-                    <div class="signature">
-                        <p>С любовью,</p>
-                        <p class="signature-names">Виктория и Денис</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- Интерактивное поле "Что я сделаю на свадьбе?" -->
         <section class="section" id="interactive">
             <div class="interactive-field">
@@ -2967,7 +2832,3 @@ function setupRSVPForm() {
 </script>
 </body>
 </html>
-
-
-
-
