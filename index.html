@@ -2628,13 +2628,12 @@ function setupRSVPForm() {
             return;
         }
         
-        // Собираем данные
+        // Собираем данные БЕЗ food_preference
         const formData = {
             name: name,
             phone: phone,
             guests: guests,
             attendance: attendance,
-            food_preference: document.getElementById('food_preference').value || '',
             message: document.getElementById('message_form').value.trim() || '',
             timestamp: new Date().toISOString(),
             botcheck: '' // Поле для проверки ботов (оставляем пустым)
@@ -2821,6 +2820,7 @@ function setupRSVPForm() {
 </script>
 </body>
 </html>
+
 
 
 
